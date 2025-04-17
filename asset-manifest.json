@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/React-Website/static/css/main.66d68b02.css",
-    "main.js": "/React-Website/static/js/main.56de843a.js",
-    "static/media/HeartPug1.JPG": "/React-Website/static/media/HeartPug1.17055ae2588fc57a4a0d.JPG",
-    "index.html": "/React-Website/index.html",
-    "main.66d68b02.css.map": "/React-Website/static/css/main.66d68b02.css.map",
-    "main.56de843a.js.map": "/React-Website/static/js/main.56de843a.js.map"
+    "main.css": "/static/css/main.69eb7aa6.css",
+    "main.js": "/static/js/main.c5263d62.js",
+    "static/media/HeartPug1.JPG": "/static/media/HeartPug1.17055ae2588fc57a4a0d.JPG",
+    "index.html": "/index.html",
+    "main.69eb7aa6.css.map": "/static/css/main.69eb7aa6.css.map",
+    "main.c5263d62.js.map": "/static/js/main.c5263d62.js.map"
   },
   "entrypoints": [
-    "static/css/main.66d68b02.css",
-    "static/js/main.56de843a.js"
+    "static/css/main.69eb7aa6.css",
+    "static/js/main.c5263d62.js"
   ]
 }
