@@ -5,6 +5,7 @@ video {
     position: fixed;
     z-index: -1;
     pointer-events: none;
+    object-fit: cover;
 }
 
 .hero-container {
