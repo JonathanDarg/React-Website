@@ -1,0 +1,32 @@
+.pug-page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.video-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pug-video {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+@media (max-width: 760px) {
+  .video-wrapper {
+    margin-top: 18vh; /* push video down */
+    margin-bottom: 2rem;
+  }
+
+  .pug-video {
+    max-width: 85%;
+    max-height: 50vh;
+  }
+}
