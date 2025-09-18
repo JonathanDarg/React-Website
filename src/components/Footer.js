@@ -15,7 +15,9 @@ function Footer() {
       <section className='social-media'>
         <div className='footer-bottom'>
           <div className='footer-logo-center'>
-            <FontAwesomeIcon icon={faFaceSmile} className='logo-icon' />
+            <Link to="/pug" aria-label="Pug page">
+              <FontAwesomeIcon icon={faFaceSmile} className='logo-icon' />
+            </Link>
           </div>
           <small className='website-rights'>© {currentYear}</small>
           <div className='social-icons-centered'>

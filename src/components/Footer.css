@@ -24,6 +24,21 @@
     color: white;
     margin-bottom: 10px;
   }
+
+  /* Ensure the smile/logo icon is white and stays white on hover/focus/active */
+  .footer-logo-center .logo-icon,
+  .footer-logo-center a .logo-icon {
+    color: #ffffff !important;
+    fill: #ffffff !important; /* for SVG-based icons */
+    transition: color 0.2s ease, fill 0.2s ease;
+  }
+
+  .footer-logo-center a:focus .logo-icon,
+  .footer-logo-center a:hover .logo-icon,
+  .footer-logo-center a:active .logo-icon {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+  }
   
   .website-rights {
     color: white;
