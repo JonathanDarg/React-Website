@@ -18,6 +18,11 @@
     justify-content: center;
     font-size: 3rem;
   }
+
+/* Ensure main content can start underneath the fixed navbar */
+.content-under-nav {
+  padding-top: 80px; /* equal to navbar height */
+}
   
   .about {
     background-position: center;
