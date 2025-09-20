@@ -7,6 +7,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 10vh;
 }
 
 .pug-video {
@@ -21,7 +22,7 @@
 
 @media (max-width: 760px) {
   .video-wrapper {
-    margin-top: 18vh; /* push video down */
+    margin-top: 22vh; /* push video down */
     margin-bottom: 2rem;
   }
 
