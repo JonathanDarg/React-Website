@@ -9,7 +9,7 @@
 
 .about-inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
   max-width: 1000px;
@@ -24,15 +24,29 @@
   box-shadow: 0 8px 24px rgba(0,0,0,0.15) inset;
 }
 
-.about-text h1 {
+.about-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.a  bout-text h1 {
   margin: 0 0 0.5rem 0;
   color: #222;
 }
 
-.about-text p {
+.about-text {
+  max-width: 45%; /* narrower text box on desktop */
+  padding: 0;
+  text-align: center;
+  align-self: center; /* vertically center the text block next to the image */
   color: #333;
   line-height: 1.4;
 }
+
+
 
 @media (max-width: 760px) {
   .about-inner {
@@ -43,4 +57,5 @@
     width: 200px;
     height: 200px;
   }
+
 }
