@@ -1,0 +1,116 @@
+/* Palette "Lunar and bronze" and type "Sentient", dealt by the design-taste-frontend skill.
+   One ground, one ink, one accent. Surfaces are told apart by a tone step, never a line or shadow. */
+:root {
+  --bg: #111111;
+  --surface: #1c1c1c;
+  --surface-2: #262626;
+  --ink: #f2f2f2;
+  --muted: #9a9a9a;
+  --accent: #a08672;
+  --accent-hover: #b59c88;
+  --accent-ink: #111111;
+
+  --font: 'Sentient', Georgia, 'Times New Roman', serif;
+
+  --step-small: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-body: clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem);
+  --step-lead: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --step-head: clamp(2rem, 1.3rem + 3.2vw, 4rem);
+  --step-display: clamp(3.25rem, 1rem + 9vw, 9.5rem);
+
+  --nav-h: 76px;
+  --gutter: clamp(1rem, 3vw, 2rem);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: var(--step-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.005em;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+  text-decoration-thickness: 0.07em;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Shared layout helpers */
+.container {
+  width: min(1240px, 100% - 2 * var(--gutter));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(5rem, 12vw, 10rem);
+}
+
+.section-title {
+  font-size: var(--step-head);
+  margin-bottom: 1.4rem;
+}
+
+.section-lead {
+  color: var(--muted);
+  font-size: var(--step-lead);
+  line-height: 1.4;
+  max-width: 36ch;
+}
+
+.page {
+  min-height: 100svh;
+  padding-top: var(--nav-h);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
